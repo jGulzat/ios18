@@ -16,27 +16,8 @@ class ViewController: UIViewController {
     
     @IBAction func showNextPage(_ sender: Any) {
         
-        if textFiled.text?.isEmpty ?? true {
-            textFiled.placeholder = "Fill the field, please"
-            textFiled.layer.borderColor = UIColor(red: 56/255,
-                                                  green: 95/255,
-                                                  blue: 255/255,
-                                                  alpha: 1).cgColor
-            //rgba(1,56,95,255)
-            //UIColor.red.cgColor
-            textFiled.layer.borderWidth = 3
-        } else {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-            let name = textFiled.text ?? "textFiled"
-            vc.name = name.isEmpty ? "empty" : name
-        /// # Mark: переход на экран без navigationControllerа
-           // vc.modalPresentationStyle = .fullScreen
-          //  self.present(vc, animated: true)
-        /// # Mark: переход на экран через navigationController
-            navigationController?.pushViewController(vc, animated: true)
-        /// # Mark: переход стартовый экран navigationControllerа
-          //    navigationController?.popToRootViewController(animated: true)
-        }
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TableViewCustomCellViewController") as! TableViewCustomCellViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {

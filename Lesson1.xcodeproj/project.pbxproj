@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C557B842A1BB66D00930210 /* TableViewCustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C557B832A1BB66D00930210 /* TableViewCustomCellViewController.swift */; };
+		7C557B882A1BB9C100930210 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C557B862A1BB9C100930210 /* ContactTableViewCell.swift */; };
+		7C557B892A1BB9C100930210 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C557B872A1BB9C100930210 /* ContactTableViewCell.xib */; };
+		7C557B8C2A1BBA0C00930210 /* ExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C557B8A2A1BBA0C00930210 /* ExViewController.swift */; };
+		7C557B8D2A1BBA0C00930210 /* ExViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C557B8B2A1BBA0C00930210 /* ExViewController.xib */; };
+		7C557B8F2A1BBF6E00930210 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C557B8E2A1BBF6E00930210 /* DetailViewController.swift */; };
+		7C557B922A1BC30700930210 /* GoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C557B912A1BC30700930210 /* GoodModel.swift */; };
 		7C6FF7322A0D30770001B7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6FF7312A0D30770001B7E5 /* AppDelegate.swift */; };
 		7C6FF7342A0D30770001B7E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6FF7332A0D30770001B7E5 /* SceneDelegate.swift */; };
 		7C6FF7362A0D30770001B7E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6FF7352A0D30770001B7E5 /* ViewController.swift */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C557B832A1BB66D00930210 /* TableViewCustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCustomCellViewController.swift; sourceTree = "<group>"; };
+		7C557B862A1BB9C100930210 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		7C557B872A1BB9C100930210 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		7C557B8A2A1BBA0C00930210 /* ExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExViewController.swift; sourceTree = "<group>"; };
+		7C557B8B2A1BBA0C00930210 /* ExViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExViewController.xib; sourceTree = "<group>"; };
+		7C557B8E2A1BBF6E00930210 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7C557B912A1BC30700930210 /* GoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodModel.swift; sourceTree = "<group>"; };
 		7C6FF72E2A0D30770001B7E5 /* Lesson1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6FF7312A0D30770001B7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6FF7332A0D30770001B7E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C557B852A1BB96B00930210 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7C557B862A1BB9C100930210 /* ContactTableViewCell.swift */,
+				7C557B872A1BB9C100930210 /* ContactTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7C557B902A1BC2EA00930210 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C557B912A1BC30700930210 /* GoodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7C6FF7252A0D30770001B7E5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +89,7 @@
 		7C6FF7302A0D30770001B7E5 /* Lesson1 */ = {
 			isa = PBXGroup;
 			children = (
+				7C557B902A1BC2EA00930210 /* Model */,
 				7CF61CC02A127637001A134D /* Resource */,
 				7CF61CBF2A127623001A134D /* AppDelegate */,
 				7CF61CBE2A1275F4001A134D /* Contriollers */,
@@ -79,8 +111,13 @@
 		7CF61CBE2A1275F4001A134D /* Contriollers */ = {
 			isa = PBXGroup;
 			children = (
+				7C557B852A1BB96B00930210 /* Cell */,
 				7C6FF7352A0D30770001B7E5 /* ViewController.swift */,
 				7CF61CC12A12771E001A134D /* SecondViewController.swift */,
+				7C557B832A1BB66D00930210 /* TableViewCustomCellViewController.swift */,
+				7C557B8A2A1BBA0C00930210 /* ExViewController.swift */,
+				7C557B8B2A1BBA0C00930210 /* ExViewController.xib */,
+				7C557B8E2A1BBF6E00930210 /* DetailViewController.swift */,
 			);
 			path = Contriollers;
 			sourceTree = "<group>";
@@ -160,8 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C557B892A1BB9C100930210 /* ContactTableViewCell.xib in Resources */,
 				7C6FF73E2A0D30770001B7E5 /* LaunchScreen.storyboard in Resources */,
 				7C6FF73B2A0D30770001B7E5 /* Assets.xcassets in Resources */,
+				7C557B8D2A1BBA0C00930210 /* ExViewController.xib in Resources */,
 				7C6FF7392A0D30770001B7E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,10 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C557B8C2A1BBA0C00930210 /* ExViewController.swift in Sources */,
+				7C557B882A1BB9C100930210 /* ContactTableViewCell.swift in Sources */,
 				7CF61CC22A12771E001A134D /* SecondViewController.swift in Sources */,
 				7C6FF7362A0D30770001B7E5 /* ViewController.swift in Sources */,
+				7C557B842A1BB66D00930210 /* TableViewCustomCellViewController.swift in Sources */,
 				7C6FF7322A0D30770001B7E5 /* AppDelegate.swift in Sources */,
+				7C557B922A1BC30700930210 /* GoodModel.swift in Sources */,
 				7C6FF7342A0D30770001B7E5 /* SceneDelegate.swift in Sources */,
+				7C557B8F2A1BBF6E00930210 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -99,6 +99,66 @@
             </objects>
             <point key="canvasLocation" x="-127" y="-18"/>
         </scene>
+        <!--Table View Custom Cell View Controller-->
+        <scene sceneID="rbu-Fh-ZnK">
+            <objects>
+                <viewController storyboardIdentifier="TableViewCustomCellViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hED-jC-mKZ" customClass="TableViewCustomCellViewController" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UaN-l9-2FD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lBV-Lb-42w">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zdL-ID-dkc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lBV-Lb-42w" firstAttribute="top" secondItem="zdL-ID-dkc" secondAttribute="top" id="Cza-HR-uIX"/>
+                            <constraint firstItem="zdL-ID-dkc" firstAttribute="bottom" secondItem="lBV-Lb-42w" secondAttribute="bottom" id="OHk-q7-9XK"/>
+                            <constraint firstItem="zdL-ID-dkc" firstAttribute="trailing" secondItem="lBV-Lb-42w" secondAttribute="trailing" id="WYt-Lo-Gp3"/>
+                            <constraint firstItem="lBV-Lb-42w" firstAttribute="leading" secondItem="zdL-ID-dkc" secondAttribute="leading" id="bJ7-4F-8QN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="lBV-Lb-42w" id="BC8-0z-Toz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqK-Y6-J7k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="703"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="zMS-B0-6b8">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YHe-uS-Mqp" customClass="DetailViewController" customModule="Lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDM-52-7ft">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNN-rO-xtV">
+                                <rect key="frame" x="166" y="428" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a1L-bJ-B0s"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="kNN-rO-xtV" firstAttribute="centerX" secondItem="a1L-bJ-B0s" secondAttribute="centerX" id="7QS-wF-wOr"/>
+                            <constraint firstItem="kNN-rO-xtV" firstAttribute="centerY" secondItem="a1L-bJ-B0s" secondAttribute="centerY" id="GTL-6C-dJF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="kNN-rO-xtV" id="vzE-vE-Oqk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMZ-nq-v2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="713"/>
+        </scene>
         <!--Second View Controller-->
         <scene sceneID="dqc-7T-LpT">
             <objects>
@@ -186,6 +246,9 @@
         <image name="ic_logo" width="736" height="736"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

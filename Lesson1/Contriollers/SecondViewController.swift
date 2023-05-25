@@ -18,6 +18,4 @@ class SecondViewController: UIViewController {
         print("name: \(name)")
         nameLabel.text = name
     }
-    
-
 }
